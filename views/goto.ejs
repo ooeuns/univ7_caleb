@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <table width="100%" border="1">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>학년</th>
+                    <th>성별</th>
+                    <th>리더 이름</th>
+                    <th>휴대폰</th>
+                    <th>신청 날짜</th>
+                    <th>신청 종류</th>
+                    <th>13일 점심</th>
+                    <th>13일 저녁</th>
+                    <th>13일 숙박</th>
+                    <th>14일 아침</th>
+                    <th>14일 점심</th>
+                    <th>14일 저녁</th>
+                    <th>14일 숙박</th>
+                    <th>15일 아침</th>
+                    <th>15일 점심</th>
+                    <th>15일 저녁</th>
+                    <th>15일 숙박</th>
+                    <th>16일 아침</th>
+                    <th>16일 점심</th>
+                </tr>
+            </thead>
+            <tbody>
+                  <% topic.forEach(function (item, index) { %>
+                <tr>
+                    <td><%-JSON.stringify(item.name)%></td>
+                    <td><%-JSON.stringify(item.grade)%></td>
+                    <td><%-JSON.stringify(item.gender)%></td>
+                    <td><%-JSON.stringify(item.leader)%></td>
+                    <td><%-JSON.stringify(item.phone)%></td>
+                    <td><%-JSON.stringify(item.date)%></td>
+                    <td><%-JSON.stringify(item.category)%></td>
+                    <td><%-JSON.stringify(item.lun13)%></td>
+                    <td><%-JSON.stringify(item.din13)%></td>
+                    <td><%-JSON.stringify(item.slp13)%></td>
+                    <td><%-JSON.stringify(item.mor14)%></td>
+                    <td><%-JSON.stringify(item.lun14)%></td>
+                    <td><%-JSON.stringify(item.din14)%></td>
+                    <td><%-JSON.stringify(item.slp14)%></td>
+                    <td><%-JSON.stringify(item.mor15)%></td>
+                    <td><%-JSON.stringify(item.lun15)%></td>
+                    <td><%-JSON.stringify(item.din15)%></td>
+                    <td><%-JSON.stringify(item.slp15)%></td>
+                    <td><%-JSON.stringify(item.mor16)%></td>
+                    <td><%-JSON.stringify(item.lun16)%></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -321,6 +321,11 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
 }
 
+.portfolio-modal #vacation-meeting{
+  padding: 100px 0;
+  text-align: left;
+}
+
 .portfolio-modal .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
